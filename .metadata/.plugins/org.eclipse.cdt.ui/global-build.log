@@ -1,0 +1,31 @@
+10:25:19 **** Incremental Build of configuration Debug for project LRWAN_NS1 ****
+make all 
+arm-none-eabi-gcc "C:/Users/oubat/Desktop/LPWAN/Projects/NUCLEO-L073RZ/Applications/LoRaWAN/LoRaWAN_AT_Master/LoRaWAN/App/lora_driver.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L073xx -DUSE_BAND_868 -DUSE_STM32L0XX_NUCLEO -DUSE_LRWAN_NS1 -DCMD_DEBUG -c -I../../../Core/Inc -I../../../LoRaWAN/App -I../../../../../../../../Drivers/STM32L0xx_HAL_Driver/Inc -I../../../../../../../../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../../../../../../../../Drivers/CMSIS/Include -I../../../../../../../../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../../../../../../../Drivers/BSP/Components/Common -I../../../../../../../../Drivers/BSP/Components/hts221 -I../../../../../../../../Drivers/BSP/Components/lps25hb -I../../../../../../../../Drivers/BSP/Components/lps22hb -I../../../../../../../../Drivers/BSP/LRWAN_NS1 -I../../../../../../../../Drivers/BSP/STM32L0xx_Nucleo -I../../../../../../../../Utilities/lpm/tiny_lpm -I../../../../../../../../Utilities/misc -I../../../../../../../../Utilities/timer -O0 -Wall -Werror -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/App/lora_driver.d" -MT"Application/App/lora_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Application/App/lora_driver.o"
+arm-none-eabi-gcc -o "LRWAN_NS1.elf" @"objects.list"   -mcpu=cortex-m0plus -T"../STM32L073RZTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="LRWAN_NS1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LRWAN_NS1.elf
+ 
+arm-none-eabi-size  LRWAN_NS1.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 170892	   1748	   6020	 178660	  2b9e4	LRWAN_NS1.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S LRWAN_NS1.elf  > "LRWAN_NS1.list"
+Finished building: LRWAN_NS1.list
+ 
+arm-none-eabi-objcopy  -O binary LRWAN_NS1.elf  "LRWAN_NS1.bin"
+Finished building: LRWAN_NS1.bin
+ 
+10:28:39 **** Incremental Build of configuration Debug for project LRWAN_NS1 ****
+make all 
+arm-none-eabi-size  LRWAN_NS1.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 170892	   1748	   6020	 178660	  2b9e4	LRWAN_NS1.elf
+Finished building: default.size.stdout
+ 
+10:47:52 **** Incremental Build of configuration Debug for project LRWAN_NS1 ****
+make all 
+arm-none-eabi-size  LRWAN_NS1.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 170892	   1748	   6020	 178660	  2b9e4	LRWAN_NS1.elf
+Finished building: default.size.stdout
+ 

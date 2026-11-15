@@ -1,0 +1,12 @@
+Debug/
+Release/
+*.o
+*.d
+*.elf
+*.bin
+*.map
+*.su
+*.cyclo
+__pycache__/
+*.exe
+*.zip

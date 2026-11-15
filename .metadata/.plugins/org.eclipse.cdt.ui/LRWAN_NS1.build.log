@@ -1,0 +1,10 @@
+10:47:52 **** Incremental Build of configuration Debug for project LRWAN_NS1 ****
+make all 
+arm-none-eabi-size  LRWAN_NS1.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 170892	   1748	   6020	 178660	  2b9e4	LRWAN_NS1.elf
+Finished building: default.size.stdout
+ 
+
+10:47:53 Build Finished. 0 errors, 0 warnings. (took 1s.583ms)
+
